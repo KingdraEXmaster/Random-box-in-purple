@@ -5,6 +5,13 @@
     </head>
     <body>
         <a-scene background="color:#5A0886">
+
+<a-assets><img id= "hi" src="Pika.png"></a-assets>
+
+<a-assets><img id= "hi2" src="Pika4.png"></a-assets>
+
+<a-sky src="#hi"></a-sky>
+
 <a-box color="white" position="10 24 6" opacity="0.5" width="8" depth="15" height="5"
 animation="property : object3D.position.x; to : 200; dur: 20000; loop : true"></a-box>
 
@@ -41,8 +48,17 @@ animation="property : object3D.position.y; to :-40; dur: 7000; loop : true"></a-
 <a-box color="#0D16C0" position="7 24 4" opacity="0.75" width="1" depth="1" height="1"
 animation="property : object3D.position.y; to :-40; dur: 7000; loop : true"></a-box>
 
+<a-box color="#50C878" position="10 -20 12" width="1" depth="5" height="40"
+rotation="0 0 25"></a-box>
+
+<a-box color="#50C878" position="-7 -20 12" width="1" depth="5" height="40"
+rotation="0 0 -25"></a-box>
+
+<a-box color="#50C878" position="1.5 -21 12" width="18" depth="5" height="0.5" ></a-box>
+
+
 <a-entity>
-    <a-plane width="65" height="65" color="#50C878" position="0 -40 0" rotation="-90 0 0"></a-plane>
+    <a-plane width="6500" height="6500" src="#hi2" position="0 -40 0" rotation="-90 0 0"></a-plane>
 </a-entity>
         </a-scene>
     </body>
